@@ -25,7 +25,7 @@ const SelectLanguage = (props) => {
   )
 }
 
-SelectLanguage.PropTypes = {
+SelectLanguage.propTypes = {
   selectedLanguage: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired
 }
