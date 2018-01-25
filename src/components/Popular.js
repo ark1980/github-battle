@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SelectLanguage from './selectLanguage';
-import ShowRepos from './showRepos';
+import SelectLanguage from './SelectLanguage';
+import ShowRepos from './ShowRepos';
 import api from '../utils/api';
 
 class Popular extends Component {
