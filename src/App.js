@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Popular from './components/popular'
+import Popular from './components/popular';
+import {BrowserRouter as Router,
+        Link,
+        Route } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
