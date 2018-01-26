@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
 import Popular from './components/Popular';
-import {BrowserRouter as Router,
-        Link,
-        Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import Battle from './components/Battle';
+
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom';
+
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to Github-Battle</h1>
-        </header>
-        <Popular />
-      </div>
+      <Router>
+        <div className="app">
+          <header className="app-header">
+            <h1 className="app-title">Welcome to Github-Battle</h1>
+            <Nav />
+          </header>
+          <Route exact path='/' component={Home}/>
+          <Route path='/battle' component={Battle}/>
+          <Route exact path='/popular' component={Popular}/>
+        </div>
+      </Router>
     );
   }
 }

@@ -1,4 +1,4 @@
-.App {
+.app {
   text-align: center;
 }
 
@@ -9,19 +9,20 @@ ul {
 li {
   list-style-type: none;
 }
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+a {
+  text-decoration: none;
+  color: red;
 }
 
-.App-header {
+.app-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: rgba(255, 255, 255, 0.781);
 }
 
-.App-title {
+.app-title {
   font-size: 1.5em;
 }
 
@@ -40,3 +41,33 @@ li {
   color: rgb(2, 101, 131);
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  margin:20px 20px 0 0;
+}
+
+.nav li a {
+  color: rgb(22, 223, 206);
+  font-size: 18px;
+}
+
+.active {
+  font-weight: bold;
+  -webkit-text-fill-color: red;
+  display:inline-block;
+  -webkit-transform:scale(1.1,1); /* Safari and Chrome */
+  -moz-transform:scale(1.1,1); /* Firefox */
+  -ms-transform:scale(1.1,1); /* IE 9 */
+  -o-transform:scale(1.1,1); /* Opera */
+  transform:scale(1.1,1); /* W3C */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
