@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Battle = () => {
-  return (
-    <div>Battle</div>
-  )
+class Battle extends Component {
+  constructor(props) {
+    super(props)
+    
+  }
+
+  render() {
+    return (
+      <div>Battle</div>
+    )
+  }
 }
 
 export default Battle;
