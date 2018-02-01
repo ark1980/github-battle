@@ -1,4 +1,4 @@
-import React, { Component, InputHTMLAttributes } from 'react';
+import React, { Component } from 'react';
 
 class InputPlayer extends Component {
   constructor(props) {
@@ -28,8 +28,8 @@ class InputPlayer extends Component {
 
   render() {
     return(
-      <form className="PlayerInputForm" onSubmit={this.handleSubmit} >
-        <label className="label" htmlFor="username">
+      <form className="column" onSubmit={this.handleSubmit} >
+        <label htmlFor="username">
           {this.props.label}
         </label>
         <input

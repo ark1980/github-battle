@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+h1, h2, h3, h4, h5 ,h6 {
+  margin:0;
+  padding: 0;
+} 
+
 ul {
   padding: 0;
 }
@@ -14,6 +19,36 @@ a {
   text-decoration: none;
   color: red;
 }
+
+.app-header {
+  background: #dbdbdba2;
+  height: 150px;
+  margin:0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.app-title {
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 20px;
+};
 
 .app-header {
   background-color: #222;
@@ -44,6 +79,7 @@ a {
 .nav {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .nav li {
@@ -51,12 +87,12 @@ a {
 }
 
 .nav li a {
-  color: rgb(22, 223, 206);
+  color: rgb(2, 101, 131);
   font-size: 18px;
 }
 
 .active {
-  font-weight: bold;
+  font-weight: 400;
   -webkit-text-fill-color: red;
   display:inline-block;
   -webkit-transform:scale(1.1,1); /* Safari and Chrome */
@@ -100,7 +136,7 @@ a {
   justify-content: space-around;
 }
 
-.PlayerInputForm {
+.column {
   margin: 50px 0;
   display: flex;
   flex-direction: column;
@@ -108,7 +144,7 @@ a {
   width: 500px;
 }
 
-.PlayerInputForm input {
+.column input {
   border-radius: 3px;
   margin: 10px 0;
   padding: 5px;
@@ -118,8 +154,19 @@ a {
   height: 30px;
 }
 
-.PlayerInputForm label {
+.column label {
   text-align: center;
   font-weight: 200;
   font-size: 30px;
+}
+
+.reset {
+  color: red;
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  display: block;
 }

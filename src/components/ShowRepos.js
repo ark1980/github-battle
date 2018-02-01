@@ -1,5 +1,4 @@
 import React from 'react';
-import './showRepos.css';
 import PropTypes from 'prop-types';
 
 const ShowRepos = (props) => {
